@@ -1,0 +1,301 @@
+@charset "UTF-8";
+@media screen and (min-width: 375px) {
+  body {
+    font-family: "roboto";
+  }
+  .margingéral {
+    margin-left: 20px;
+  }
+  .marginbot {
+    margin-bottom: 10px;
+  }
+  .policetitre {
+    font-family: "shrikhand";
+  }
+  .widhtlogo {
+    width: 197px;
+    height: 36px;
+  }
+  .paddinglogo {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .flexCentre1 {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .spaceB {
+    display: flex;
+    justify-content: space-between;
+  }
+  .flexCentre {
+    display: flex;
+    justify-content: center;
+  }
+  .widhtimg {
+    width: 100%;
+    height: 275px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .margintitre {
+    margin-left: 25px;
+    margin-top: 20px;
+  }
+  .margintitre2 {
+    margin-right: 45px;
+    margin-top: 30px;
+  }
+  .widhtheart {
+    width: 22px;
+    height: 21px;
+  }
+  .marginbot2 {
+    margin-top: 20px;
+    margin-left: 15px;
+  }
+  .marginbot3 {
+    margin-top: -25px;
+  }
+  .flexend {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: -30px;
+    overflow: hidden;
+  }
+  .margecoeur {
+    margin-right: 70px;
+    margin-top: 25px;
+  }
+  .coeursolid {
+    margin-right: -10px;
+  }
+  .fa-heart {
+    font-size: 22px;
+  }
+  .fas {
+    font-size: 22px;
+    color: transparent;
+    background-image: linear-gradient(#9356DC, #FF79DA);
+    background-clip: text;
+    -webkit-background-clip: text;
+    opacity: 0;
+    transition: all 200ms;
+    margin-right: -22px;
+  }
+  .fas:hover {
+    opacity: 1;
+    transform: scale(1.6);
+  }
+  .fa-regular.fa-heart:hover {
+    color: transparent;
+  }
+  .fastaille {
+    font-size: 22px;
+  }
+  
+  .euro:active+.menu-item_check{
+    transform: rotateX(360deg);
+  }
+    
+  
+.menu-item_check:active{
+  display: flex;
+  width: 100%;
+  transform: rotateX(360);
+  align-items:center;
+  justify-content: center;
+    background-color: #99E2D0;
+    border-radius: 0px 20px 20px 0px;
+    position:relative;
+    overflow: hidden;
+    cursor: pointer;
+    width: 70px;
+    height: 70px;
+animation-fill-mode: both;
+    transition:left 300ms cubic-bezier(4, 0, 23, 1);
+    margin-top: -10px;
+    margin-right: 0;
+    margin-left: 0;
+
+  }
+  
+
+.che {
+color: white;
+  display: contents;
+  justify-content: center;
+  align-items: center;
+}
+  
+   .card-color {
+    border-radius: 20px;
+    background-color: white;
+    width: 95%;
+    height: 69px;
+    animation: appear 1s;
+  }
+  .card-marge {
+    margin-top: -6px;
+  }
+  .title-marge {
+    margin-top: 2px;
+  }
+  @keyframes appear {
+    0% {
+      transform: scale(0);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  .backsection {
+    background-color: #f2f2f2;
+    position: relative;
+    margin-top: -60px;
+    border-radius: 40px 40px 0px 0px;
+  }
+  .border {
+    border-bottom: solid 2px #99E2D0;
+    width: 45px;
+  }
+  .bordersection {
+    border-radius: 20px;
+    background-color: white;
+    width: 95%;
+    height: 69px;
+  }
+  .margintop {
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+  .displayspace {
+    display: flex;
+    justify-content: space-between;
+  }
+  .marginsection {
+    padding-top: 10px;
+    margin-left: 15px;
+  }
+  .euro {
+    padding-right: 10px;
+    margin-top: 5px;
+  
+  }
+  .btn {
+    text-decoration: none;
+  }
+  .fontbold {
+    font-weight: bold;
+  }
+  .fonsmal {
+    font-size: small;
+  }
+  .backboutons:hover {
+    opacity: 90%;
+    box-shadow: 0 0 8px #9356DC;
+  }
+
+  .marginsec {
+    margin-top: 10px;
+  }
+  .marginsec2 {
+    margin-bottom: 50px;
+  }
+  .backboutons {
+    background-image: linear-gradient(#e98ef6, #9356DC);
+    width: 218px;
+    height: 50px;
+    border-radius: 25px;
+  }
+  .colortext2 {
+    color: white;
+  }
+  .paddingboutons {
+    padding-top: 12px;
+  }
+  .flexCentre2 {
+    display: flex;
+    justify-content: center;
+  }
+  .margeboutons {
+    padding-bottom: 30px;
+    margin-top: 30px;
+  }
+  .backfooter2 {
+    background-color: #353535;
+    width: 100%;
+    height: 100%;
+  }
+  .widhtlogo1 {
+    width: 137.58px;
+    height: 27px;
+  }
+  .colortext {
+    color: white;
+  }
+  .margefooter {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+  }
+  .margelogo {
+    margin-bottom: 15px;
+  }
+  .marginfooter {
+    margin-right: 5px;
+  }
+}
+@media screen and (min-width: 1040px) {
+  .flexCentre1 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .margecoeur {
+    margin-left: 20px;
+  }
+  .backsection {
+    background-color: #f2f2f2;
+    position: relative;
+    margin-top: -60px;
+    border-radius: 40px 40px 0px 0px;
+    width: 80%;
+    margin-left: 130px;
+  }
+  .margintitre {
+    margin-left: 25px;
+    margin-top: 20px;
+    margin-right: 30px;
+  }
+  .spaceB {
+    display: flex;
+    justify-content: center;
+  }
+  .displayfoot {
+    display: flex;
+    flex-direction: row-reverse;
+    padding-top: 50px;
+  }
+  .displayrow {
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+    margin-right: 50px;
+  }
+  .margelogo2 {
+    margin-top: 65px;
+    margin-right: 30px;
+  }
+  .marginpropo {
+    margin-right: 20px;
+  }
+  .marginpropo2 {
+    margin-right: 10px;
+  }
+  .marginpropo1 {
+    margin-right: 35px;
+  }
+}/*# sourceMappingURL=style2.css.map */
