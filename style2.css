@@ -95,47 +95,78 @@
   .fastaille {
     font-size: 22px;
   }
-  
-  .euro:active+.menu-item_check{
-    transform: rotateX(360deg);
-  }
-    
-  
-.menu-item_check:active{
-  display: flex;
-  width: 100%;
-  transform: rotateX(360);
-  align-items:center;
-  justify-content: center;
-    background-color: #99E2D0;
-    border-radius: 0px 20px 20px 0px;
-    position:relative;
-    overflow: hidden;
-    cursor: pointer;
-    width: 70px;
-    height: 70px;
-animation-fill-mode: both;
-    transition:left 300ms cubic-bezier(4, 0, 23, 1);
-    margin-top: -10px;
-    margin-right: 0;
-    margin-left: 0;
-
-  }
-  
-
-.che {
-color: white;
-  display: contents;
-  justify-content: center;
-  align-items: center;
-}
-  
-   .card-color {
-    border-radius: 20px;
+  .card-color {
+    border-radius: 16px;
     background-color: white;
-    width: 95%;
-    height: 69px;
-    animation: appear 1s;
+    width: 100%;
+    height: 70px;
+    box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0);
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+  }
+  .card-color:hover .validation-btn {
+    cursor: pointer;
+    animation: validation 500ms ease-in forwards;
+  }
+  .card-color:hover .validation-btn i {
+    animation: rotate 500ms 260ms both;
+  }
+  .card-color_txt {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 10px;
+    flex: 1 1 60%;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  .card-color_title {
+    font-weight: 500;
+    font-size: 18px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+  .card-color_body p {
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+  .euro {
+    align-self: flex-end;
+    font-weight: 700;
+    font-size: 15px;
+    margin: 0 15px 10px 15px;
+  }
+  .menu__validation-btn {
+    height: 70px;
+    width: 60px;
+    background-color: #99E2D0;
+    border-radius: 0 16px 16px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: -60px;
+  }
+  .menu__validation-btn i {
+    font-size: 26px;
+  }
+  .fa-circle-check {
+    color: #fff;
+    font-size: larger;
+    transform: rotate(180deg);
+  }
+  @keyframes validation {
+    to {
+      margin-right: 0;
+    }
+  }
+  @keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
   }
   .card-marge {
     margin-top: -6px;
@@ -179,25 +210,12 @@ color: white;
     padding-top: 10px;
     margin-left: 15px;
   }
-  .euro {
-    padding-right: 10px;
-    margin-top: 5px;
-  
-  }
-  .btn {
-    text-decoration: none;
-  }
   .fontbold {
     font-weight: bold;
   }
   .fonsmal {
     font-size: small;
   }
-  .backboutons:hover {
-    opacity: 90%;
-    box-shadow: 0 0 8px #9356DC;
-  }
-
   .marginsec {
     margin-top: 10px;
   }
@@ -205,10 +223,14 @@ color: white;
     margin-bottom: 50px;
   }
   .backboutons {
+    list-style-type: none;
     background-image: linear-gradient(#e98ef6, #9356DC);
     width: 218px;
     height: 50px;
     border-radius: 25px;
+  }
+  .btn {
+    list-style-type: none;
   }
   .colortext2 {
     color: white;
@@ -284,6 +306,99 @@ color: white;
     flex-direction: row;
     margin-top: 50px;
     margin-right: 50px;
+  }
+  .card-color:hover .menu-item_check {
+    display: flex;
+    width: 100%;
+    transform: rotateX(360);
+    align-items: center;
+    justify-content: center;
+    background-color: #99E2D0;
+    border-radius: 0px 20px 20px 0px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    width: 70px;
+    height: 70px;
+    animation-fill-mode: both;
+    transition: left 300ms cubic-bezier(4, 0, 23, 1);
+    margin-top: -10px;
+    margin-right: 0;
+    margin-left: 0;
+  }
+  .menu__option {
+    width: 100%;
+    height: 70px;
+    background-color: #fff;
+    border-radius: 16px;
+    box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.1);
+    margin: 6px 0;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+  }
+  .menu__option:hover .validation-btn {
+    cursor: pointer;
+    animation: validation 500ms ease-in forwards;
+  }
+  .menu__option:hover .validation-btn i {
+    animation: rotate 500ms 260ms both;
+  }
+  .menu__option-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 10px;
+    flex: 1 1 60%;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  .menu__option-title {
+    font-weight: 500;
+    font-size: 18px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+  .menu__option-body p {
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+  .menu__option-price {
+    align-self: flex-end;
+    font-weight: 700;
+    font-size: 15px;
+    margin: 0 15px 10px 15px;
+  }
+  .menu__validation-btn {
+    height: 70px;
+    width: 60px;
+    background-color: #99E2D0;
+    border-radius: 0 16px 16px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: -60px;
+  }
+  .menu__validation-btn i {
+    font-size: 26px;
+  }
+  .fa-circle-check {
+    color: #fff;
+    font-size: larger;
+    transform: rotate(180deg);
+  }
+  @keyframes validation {
+    to {
+      margin-right: 0;
+    }
+  }
+  @keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
   }
   .margelogo2 {
     margin-top: 65px;

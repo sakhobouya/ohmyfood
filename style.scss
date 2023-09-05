@@ -230,6 +230,10 @@ $Grey3:#353535;
                 border:none ;
              }
             
+            .bouton-color:hover {
+                opacity: 90%;
+                box-shadow: 0 0 8px #9356DC;
+              }
             
         .colorboutons{
             color: white;
@@ -239,6 +243,7 @@ $Grey3:#353535;
             margin-top: 152px;
         }
 
+        
        
 
        .margetop{
