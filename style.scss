@@ -16,14 +16,19 @@ $Grey3:#353535;
 @mixin textshadow {
     text-shadow: #8640dc rgba(0, 0, 0, 0.1);
 }
-
+* {
+    margin:0;
+padding: 0;
+border: 0;
+box-sizing: border-box; 
+}
 
 // Header
 
 
 
 
-@media screen and (min-width: 375px) {
+
 
     .loader2{
         $animation-duration: 3s;
@@ -168,8 +173,9 @@ $Grey3:#353535;
             width: 80px;
             height: 29px;
             background-color: #99E2D0;
+            top: 20px;
+            right: 20px;
             position: absolute;
-            margin-top:175px;
         }
 
          .displayend{
@@ -366,6 +372,7 @@ $Grey3:#353535;
         height: auto;
         border-radius: 15px;
         background-color: white; 
+        position: relative;
     }
 
 
@@ -408,7 +415,7 @@ $Grey3:#353535;
     .margetopcard{
         margin-top: 10px;
     }
-}
+
 
 
 //article
@@ -468,8 +475,8 @@ $Grey3:#353535;
     height: 29px;
     background-color: #99E2D0;
     position: absolute;
-    margin-top: -220px; 
-    margin-left: 280px;                                                                                                                                                                                                 
+    right: 20px;    
+    top: 20px;                                                                                                                                                                                          
 }
 
  .displayend{
@@ -526,6 +533,7 @@ margin-right: 250px;
     height: 80%;
     border-radius: 15px;
     background-color: white; 
+    position: relative;
     
 }
 

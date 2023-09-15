@@ -1,273 +1,344 @@
-@charset "UTF-8";
-@media screen and (min-width: 375px) {
-  body {
-    font-family: "roboto";
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "roboto";
+}
+
+.marginbot {
+  margin-bottom: 10px;
+}
+
+.policetitre {
+  font-family: "shrikhand";
+}
+
+.widhtlogo {
+  width: 197px;
+  height: 36px;
+}
+
+.paddinglogo {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.flexCentre1 {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.spaceB {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flexCentre {
+  display: flex;
+  justify-content: center;
+}
+
+.widhtimg {
+  width: 100%;
+  height: 275px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.margintitre {
+  margin-left: 25px;
+  margin-top: 20px;
+}
+
+.margintitre2 {
+  margin-right: 45px;
+  margin-top: 30px;
+}
+
+.widhtheart {
+  width: 22px;
+  height: 21px;
+}
+
+.marginbot2 {
+  margin-top: 20px;
+  margin-left: 15px;
+}
+
+.marginbot3 {
+  margin-top: -25px;
+}
+
+.flexend {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: -30px;
+  overflow: hidden;
+}
+
+.margecoeur {
+  margin-right: 70px;
+  margin-top: 25px;
+}
+
+.coeursolid {
+  margin-right: -10px;
+}
+
+.fa-heart {
+  font-size: 22px;
+}
+
+.fas {
+  font-size: 22px;
+  color: transparent;
+  background-image: linear-gradient(#9356DC, #FF79DA);
+  background-clip: text;
+  -webkit-background-clip: text;
+  opacity: 0;
+  transition: all 200ms;
+  margin-right: -22px;
+}
+
+.fas:hover {
+  opacity: 1;
+  transform: scale(1.6);
+}
+
+.fa-regular.fa-heart:hover {
+  color: transparent;
+}
+
+.fastaille {
+  font-size: 22px;
+}
+
+.card-marge {
+  margin-top: -6px;
+}
+
+.title-marge {
+  margin-top: 2px;
+}
+
+.backsection {
+  background-color: #f2f2f2;
+  position: relative;
+  margin-top: -60px;
+  border-radius: 40px 40px 0px 0px;
+}
+
+.border {
+  border-bottom: solid 2px #99E2D0;
+  width: 45px;
+}
+
+.bordersection {
+  border-radius: 20px;
+  background-color: white;
+  width: 95%;
+  height: 69px;
+}
+
+.margintop {
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.displayspace {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact {
+  text-decoration: none;
+  color: #fff;
+}
+
+.marginsection {
+  padding-top: 10px;
+  margin-left: 15px;
+}
+
+.backboutons a {
+  text-decoration: none;
+}
+
+.fontbold {
+  font-weight: bold;
+}
+
+.fonsmal {
+  font-size: small;
+  opacity: 70%;
+}
+
+.marginsec {
+  margin-top: 10px;
+}
+
+.marginsec2 {
+  margin-bottom: 50px;
+}
+
+.backboutons {
+  list-style-type: none;
+  background-image: linear-gradient(#e98ef6, #9356DC);
+  width: 218px;
+  height: 50px;
+  border-radius: 25px;
+}
+
+.btne {
+  list-style-type: none;
+}
+
+.colortext2 {
+  color: white;
+}
+
+.paddingboutons {
+  padding-top: 12px;
+}
+
+.flexCentre2 {
+  display: flex;
+  justify-content: center;
+}
+
+.margeboutons {
+  padding-bottom: 30px;
+  margin-top: 30px;
+}
+
+.backfooter2 {
+  background-color: #353535;
+  width: 100%;
+  height: 100%;
+}
+
+.widhtlogo1 {
+  width: 137.58px;
+  height: 27px;
+}
+
+.colortext {
+  color: white;
+}
+
+.margefooter {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+}
+
+.margelogo {
+  margin-bottom: 15px;
+}
+
+.marginfooter {
+  margin-right: 5px;
+}
+
+.menu__option {
+  width: 98%;
+  height: 70px;
+  background-color: #fff;
+  border-radius: 16px;
+  box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.1);
+  margin: 6px 0;
+  margin-left: 5px;
+  margin-right: -5px;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+  animation: appear 1s;
+}
+
+.menu__option:hover .validation-btn {
+  cursor: pointer;
+  animation: validation 500ms ease-in forwards;
+}
+
+.menu__option:hover .validation-btn i {
+  animation: rotate 500ms 260ms both;
+}
+
+.menu__option-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 10px;
+  flex: 1 1 60%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.menu__option-title {
+  font-weight: 500;
+  font-size: 18px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.menu__option-body p {
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.menu__option-price {
+  align-self: flex-end;
+  font-weight: 700;
+  font-size: 15px;
+  margin: 0 15px 10px 15px;
+}
+
+.menu__validation-btn {
+  height: 70px;
+  width: 60px;
+  background-color: #99E2D0;
+  border-radius: 0 16px 16px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: -60px;
+}
+
+.menu__validation-btn i {
+  font-size: 26px;
+}
+
+.fa-circle-check {
+  color: #fff;
+  font-size: larger;
+  transform: rotate(180deg);
+}
+
+@keyframes validation {
+  to {
+    margin-right: 0;
   }
-  .margingéral {
-    margin-left: 20px;
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
   }
-  .marginbot {
-    margin-bottom: 10px;
+  100% {
+    transform: rotate(360deg);
   }
-  .policetitre {
-    font-family: "shrikhand";
+}
+@keyframes appear {
+  0% {
+    transform: scale(0);
   }
-  .widhtlogo {
-    width: 197px;
-    height: 36px;
-  }
-  .paddinglogo {
-    margin-top: 20px;
-    margin-bottom: 20px;
-  }
-  .flexCentre1 {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-  }
-  .spaceB {
-    display: flex;
-    justify-content: space-between;
-  }
-  .flexCentre {
-    display: flex;
-    justify-content: center;
-  }
-  .widhtimg {
-    width: 100%;
-    height: 275px;
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
-  .margintitre {
-    margin-left: 25px;
-    margin-top: 20px;
-  }
-  .margintitre2 {
-    margin-right: 45px;
-    margin-top: 30px;
-  }
-  .widhtheart {
-    width: 22px;
-    height: 21px;
-  }
-  .marginbot2 {
-    margin-top: 20px;
-    margin-left: 15px;
-  }
-  .marginbot3 {
-    margin-top: -25px;
-  }
-  .flexend {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    margin-top: -30px;
-    overflow: hidden;
-  }
-  .margecoeur {
-    margin-right: 70px;
-    margin-top: 25px;
-  }
-  .coeursolid {
-    margin-right: -10px;
-  }
-  .fa-heart {
-    font-size: 22px;
-  }
-  .fas {
-    font-size: 22px;
-    color: transparent;
-    background-image: linear-gradient(#9356DC, #FF79DA);
-    background-clip: text;
-    -webkit-background-clip: text;
-    opacity: 0;
-    transition: all 200ms;
-    margin-right: -22px;
-  }
-  .fas:hover {
-    opacity: 1;
-    transform: scale(1.6);
-  }
-  .fa-regular.fa-heart:hover {
-    color: transparent;
-  }
-  .fastaille {
-    font-size: 22px;
-  }
-  .card-color {
-    border-radius: 16px;
-    background-color: white;
-    width: 100%;
-    height: 70px;
-    box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0);
-    display: flex;
-    justify-content: space-between;
-    overflow: hidden;
-  }
-  .card-color:hover .validation-btn {
-    cursor: pointer;
-    animation: validation 500ms ease-in forwards;
-  }
-  .card-color:hover .validation-btn i {
-    animation: rotate 500ms 260ms both;
-  }
-  .card-color_txt {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin: 10px;
-    flex: 1 1 60%;
-    white-space: nowrap;
-    overflow: hidden;
-  }
-  .card-color_title {
-    font-weight: 500;
-    font-size: 18px;
-    text-overflow: ellipsis;
-    overflow: hidden;
-  }
-  .card-color_body p {
-    text-overflow: ellipsis;
-    overflow: hidden;
-  }
-  .euro {
-    align-self: flex-end;
-    font-weight: 700;
-    font-size: 15px;
-    margin: 0 15px 10px 15px;
-  }
-  .menu__validation-btn {
-    height: 70px;
-    width: 60px;
-    background-color: #99E2D0;
-    border-radius: 0 16px 16px 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: -60px;
-  }
-  .menu__validation-btn i {
-    font-size: 26px;
-  }
-  .fa-circle-check {
-    color: #fff;
-    font-size: larger;
-    transform: rotate(180deg);
-  }
-  @keyframes validation {
-    to {
-      margin-right: 0;
-    }
-  }
-  @keyframes rotate {
-    0% {
-      transform: rotate(0deg);
-    }
-    100% {
-      transform: rotate(360deg);
-    }
-  }
-  .card-marge {
-    margin-top: -6px;
-  }
-  .title-marge {
-    margin-top: 2px;
-  }
-  @keyframes appear {
-    0% {
-      transform: scale(0);
-    }
-    100% {
-      transform: scale(1);
-    }
-  }
-  .backsection {
-    background-color: #f2f2f2;
-    position: relative;
-    margin-top: -60px;
-    border-radius: 40px 40px 0px 0px;
-  }
-  .border {
-    border-bottom: solid 2px #99E2D0;
-    width: 45px;
-  }
-  .bordersection {
-    border-radius: 20px;
-    background-color: white;
-    width: 95%;
-    height: 69px;
-  }
-  .margintop {
-    margin-top: 30px;
-    margin-bottom: 10px;
-  }
-  .displayspace {
-    display: flex;
-    justify-content: space-between;
-  }
-  .marginsection {
-    padding-top: 10px;
-    margin-left: 15px;
-  }
-  .fontbold {
-    font-weight: bold;
-  }
-  .fonsmal {
-    font-size: small;
-  }
-  .marginsec {
-    margin-top: 10px;
-  }
-  .marginsec2 {
-    margin-bottom: 50px;
-  }
-  .backboutons {
-    list-style-type: none;
-    background-image: linear-gradient(#e98ef6, #9356DC);
-    width: 218px;
-    height: 50px;
-    border-radius: 25px;
-  }
-  .btn {
-    list-style-type: none;
-  }
-  .colortext2 {
-    color: white;
-  }
-  .paddingboutons {
-    padding-top: 12px;
-  }
-  .flexCentre2 {
-    display: flex;
-    justify-content: center;
-  }
-  .margeboutons {
-    padding-bottom: 30px;
-    margin-top: 30px;
-  }
-  .backfooter2 {
-    background-color: #353535;
-    width: 100%;
-    height: 100%;
-  }
-  .widhtlogo1 {
-    width: 137.58px;
-    height: 27px;
-  }
-  .colortext {
-    color: white;
-  }
-  .margefooter {
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 20px;
-  }
-  .margelogo {
-    margin-bottom: 15px;
-  }
-  .marginfooter {
-    margin-right: 5px;
+  100% {
+    transform: scale(1);
   }
 }
 @media screen and (min-width: 1040px) {
@@ -275,6 +346,9 @@
     display: flex;
     justify-content: center;
     width: 100%;
+  }
+  .margee {
+    margin: 10px;
   }
   .margecoeur {
     margin-left: 20px;
@@ -327,12 +401,13 @@
     margin-left: 0;
   }
   .menu__option {
-    width: 100%;
+    width: 99%;
     height: 70px;
     background-color: #fff;
     border-radius: 16px;
     box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.1);
-    margin: 6px 0;
+    margin-right: -5px;
+    margin-left: 5px;
     display: flex;
     justify-content: space-between;
     overflow: hidden;
