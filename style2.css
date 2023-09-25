@@ -171,12 +171,13 @@ body {
 }
 
 .fontbold {
-  font-weight: bold;
+  font-weight: 1000;
+  font-size: larger;
 }
 
 .fonsmal {
   font-size: small;
-  opacity: 70%;
+  opacity: 90%;
 }
 
 .marginsec {
