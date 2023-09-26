@@ -46,7 +46,7 @@ body {
 }
 
 .height {
-  height: 63px;
+  height: 96px;
 }
 
 .margepos {
@@ -154,14 +154,18 @@ body {
 
 .fnct-color {
   width: 100%;
-  height: 300px;
+  height: 228px;
   background-color: #F6F6F6;
 }
 .fnct-color .fcnt-marge {
   margin-top: 35px;
   margin-bottom: 10px;
   margin-left: 30px;
-  width: 275px;
+  width: 875px;
+  font-weight: 900;
+  font-size: xxx-large;
+  justify-content: center;
+  display: flex;
 }
 
 .widhtsec1 {
@@ -216,7 +220,7 @@ body {
 .backfooter2 {
   background-color: #353535;
   width: 100%;
-  height: 100%;
+  height: 114px;
 }
 
 .widhtlogo1 {
@@ -237,14 +241,18 @@ body {
 .white-color {
   background-color: white;
   width: 100%;
-  height: 440px;
+  height: 228px;
 }
 
 .backfonction {
   background-color: #f2f2f2;
-  width: 90%;
-  height: 72.38px;
+  width: 350px;
+  height: 62.38px;
   border-radius: 20px;
+}
+
+.resto {
+  margin-bottom: 15px;
 }
 
 .margeleft {
@@ -310,8 +318,8 @@ body {
 }
 
 .card-color {
-  width: 100%;
-  height: auto;
+  width: 110%;
+  height: 70px;
   border-radius: 15px;
   background-color: white;
   position: relative;
@@ -363,15 +371,19 @@ body {
   }
   .backfonction {
     background-color: #f2f2f2;
-    width: 90%;
-    height: 72.38px;
+    width: 300px;
+    height: 62.38px;
     border-radius: 20px;
     margin-right: 20px;
   }
   .white-color {
     background-color: white;
-    width: 100%;
-    height: 100%;
+    width: 77%;
+    height: 440px;
+    margin-bottom: -250px;
+  }
+  .margefonction {
+    margin-left: 149px;
   }
   .marginleftsec {
     margin-left: 5px;
@@ -432,12 +444,12 @@ body {
   }
   .displayRow2 {
     display: grid;
-    grid-template-columns: 400px 400px;
-    grid-template-rows: 400px 400px;
+    grid-template-columns: 500px 500px;
+    grid-template-rows: 295px 295px;
   }
   .card-color {
-    width: 100%;
-    height: 80%;
+    width: 490px;
+    height: 251px;
     border-radius: 15px;
     background-color: white;
     position: relative;
@@ -453,13 +465,16 @@ body {
     padding-bottom: 0px;
   }
   .restaurant {
-    width: auto;
-    height: auto;
+    height: 708px;
     background-color: #f2f2f2;
     padding-bottom: 0px;
   }
+  .margebot {
+    margin-right: -50px;
+  }
   .resto {
-    margin-left: 300px;
+    margin-left: 160px;
+    margin-bottom: 10px;
   }
   .margintitre {
     margin-left: 25px;
