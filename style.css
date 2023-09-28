@@ -194,6 +194,12 @@ body {
   margin-left: 50px;
 }
 
+.contact {
+  text-decoration: none;
+  color: #fff;
+  margin-bottom: -15px;
+}
+
 .bouton-color {
   background-image: linear-gradient(#e98ef6, #9356DC);
   width: 218px;
@@ -400,8 +406,8 @@ body {
   .backfooter2 {
     background-color: #353535;
     width: 100%;
-    height: 254px;
-    padding: 20px;
+    height: 114px;
+    margin-top: 50px;
   }
   .backfonction {
     background-color: #f2f2f2;
@@ -425,10 +431,11 @@ body {
     margin-left: 10px;
   }
   .white-color {
-    background-color: white;
+    background-color: brown;
     height: 228px;
     display: flex;
     justify-content: space-between;
+    margin-bottom: -150px;
   }
   .margefonction {
     margin-left: 155px;
@@ -511,7 +518,7 @@ body {
     padding-bottom: 0px;
   }
   .restaurant {
-    height: 608px;
+    height: 708px;
     background-color: #f2f2f2;
     padding-bottom: 0px;
   }
@@ -534,7 +541,9 @@ body {
   .displayfoot {
     display: flex;
     flex-direction: row-reverse;
-    padding-top: 50px;
+    justify-content: flex-end;
+    align-items: end;
+    gap: 40px;
   }
   .displayrow {
     display: flex;
@@ -543,7 +552,7 @@ body {
     margin-right: 50px;
   }
   .margelogo2 {
-    padding-bottom: 30px;
+    padding-bottom: 15px;
   }
   .marginpropo {
     margin-bottom: 15px;
