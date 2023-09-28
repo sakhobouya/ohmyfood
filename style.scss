@@ -110,10 +110,102 @@ box-sizing: border-box;
         width: 100%;
     }
 
-    // Section1
 
 
-    .loader-link {
+
+
+ .number{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 0px;
+    left: -6px;
+
+
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    background-color: $Primary;
+    justify-content: center;
+    
+   }
+
+   .numéro1{
+ color: white;
+ 
+   }
+
+   .colorV{
+    color: $Primary;
+   }
+    .color1 {
+color:#353535;
+
+    }
+
+    
+
+.fcnt-marge {
+    margin-left: 102px;
+    font-weight: 700;
+    size: 24px; 
+    
+}
+.reser {
+    margin-left: 50px;
+
+}
+.fnct-color {
+    width: 100%;
+    height: 228px;
+    background-color: $Grey;
+    
+
+
+    }
+    .white-color{
+        background-color: white;
+        width: 100%; 
+        height: 228px;
+    }
+
+
+    .backfonction{
+        background-color: #f2f2f2;
+        width: 350px;
+        height: 72.38px;
+        border-radius: 20px;
+        
+    }
+    .bouton-color{
+        background-image: linear-gradient(#e98ef6, $Primary);
+        width: 218px;
+        height: 50px;
+        border-radius: 25px;
+        display: flex;
+        justify-content: center;
+        
+    }
+    
+         .bouton-color button {
+            background-image: linear-gradient(#e98ef6, $Primary);
+            border:none ;
+         }
+        
+        .bouton-color:hover {
+            opacity: 90%;
+            box-shadow: 0 0 8px #9356DC;
+          }
+        
+    .colorboutons{
+        color: white;
+        
+    }
+
+
+// section1
+
+.loader-link {
     position: relative;
 }
 
@@ -143,45 +235,9 @@ box-sizing: border-box;
 
 
 
-    
-        .fa-heart{font-size: 22px;}
-
-       .heart{
-        font-size: 22px;
-        color: transparent;
-        background-image:linear-gradient(#9356DC, #FF79DA)  ;
-        background-clip: text;
-        -webkit-background-clip: text;
-        opacity: 0;
-        transition: all 200ms;
-        margin-right: -22px;
-       }
 
 
 
-
-       .heart:hover{
-        opacity: 1;
-        transform: scale(1.2);
-       }
-
-       .fa-regular.fa-heart:hover {
-        color: transparent;
-      }
-
-       .heart-size{
-        font-size: 22px;
-       }
-.fcnt-marge {
-    margin-left: 102px;
-    font-weight: 700;
-    size: 24px; 
-    
-}
-.reser {
-    margin-left: 50px;
-
-}
 
 .card-color{
     width: 99%;
@@ -218,13 +274,7 @@ box-sizing: border-box;
          }
 
 
-        .fnct-color {
-        width: 100%;
-        height: 228px;
-        background-color: $Grey;
-        
-
-        }
+       
 
         .widhtsec1{
             display: flex;
@@ -243,37 +293,10 @@ box-sizing: border-box;
         .marginleftsec{
             margin-left: 50px;
         }
-        .contact {
-            text-decoration: none;
-            color: #fff;
-            margin-bottom: -15px;
-        }
+        
         
      
-        .bouton-color{
-            background-image: linear-gradient(#e98ef6, $Primary);
-            width: 218px;
-            height: 50px;
-            border-radius: 25px;
-            display: flex;
-            justify-content: center;
-            
-        }
         
-             .bouton-color button {
-                background-image: linear-gradient(#e98ef6, $Primary);
-                border:none ;
-             }
-            
-            .bouton-color:hover {
-                opacity: 90%;
-                box-shadow: 0 0 8px #9356DC;
-              }
-            
-        .colorboutons{
-            color: white;
-            
-        }
         .marge{
             margin-top: 152px;
         }
@@ -306,7 +329,8 @@ box-sizing: border-box;
         padding-top: 20px;
         padding-bottom: 20px;
         padding-left: 20px;
-    }.marginpropo{
+    }
+    .marginpropo{
         margin-bottom: 10px;
         margin-right: 20px;
     }
@@ -328,20 +352,7 @@ box-sizing: border-box;
     
     //article
 
-    .white-color{
-        background-color: white;
-        width: 100%; 
-        height: 228px;
-    }
-
-
-    .backfonction{
-        background-color: #f2f2f2;
-        width: 350px;
-        height: 72.38px;
-        border-radius: 20px;
-        
-    }
+    
     .resto {
         margin-bottom: 25px;
 
@@ -367,35 +378,8 @@ box-sizing: border-box;
    }
 
 
-   .number{
-    display: flex;
-    align-items: center;
-    position: absolute;
-    bottom: 0px;
-    left: -6px;
-    margin-left: -10px;
-
-    width: 20px;
-    height: 20px;
-    border-radius: 100%;
-    padding-left: 2px;
-    background-color: $Primary;
+  
     
-   }
-
-   .numéro1{
- color: white;
- margin-left: 6px;
-   }
-
-   .colorV{
-    color: $Primary;
-   }
-    .color1 {
-color:#353535;
-
-
-    }
     // Section2
 
 
@@ -424,8 +408,14 @@ color:#353535;
         object-fit: cover;
         border-radius: 15px 15px 0px 0px;
     }
+    .contact {
+        text-decoration: none;
+        color: #fff;
+        margin-bottom: -15px;
+    }
+
     
-    
+    // footer
 .displayfoot {
     padding: 20px;
 }

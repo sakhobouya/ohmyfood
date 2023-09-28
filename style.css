@@ -71,6 +71,83 @@ body {
   width: 100%;
 }
 
+.number {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom: 0px;
+  left: -6px;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  background-color: #9356DC;
+  justify-content: center;
+}
+
+.numéro1 {
+  color: white;
+}
+
+.colorV {
+  color: #9356DC;
+}
+
+.color1 {
+  color: #353535;
+}
+
+.fcnt-marge {
+  margin-left: 102px;
+  font-weight: 700;
+  size: 24px;
+}
+
+.reser {
+  margin-left: 50px;
+}
+
+.fnct-color {
+  width: 100%;
+  height: 228px;
+  background-color: #F6F6F6;
+}
+
+.white-color {
+  background-color: white;
+  width: 100%;
+  height: 228px;
+}
+
+.backfonction {
+  background-color: #f2f2f2;
+  width: 350px;
+  height: 72.38px;
+  border-radius: 20px;
+}
+
+.bouton-color {
+  background-image: linear-gradient(#e98ef6, #9356DC);
+  width: 218px;
+  height: 50px;
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+}
+
+.bouton-color button {
+  background-image: linear-gradient(#e98ef6, #9356DC);
+  border: none;
+}
+
+.bouton-color:hover {
+  opacity: 90%;
+  box-shadow: 0 0 8px #9356DC;
+}
+
+.colorboutons {
+  color: white;
+}
+
 .loader-link {
   position: relative;
 }
@@ -102,44 +179,6 @@ body {
     transform: rotate(360deg);
   }
 }
-.fa-heart {
-  font-size: 22px;
-}
-
-.heart {
-  font-size: 22px;
-  color: transparent;
-  background-image: linear-gradient(#9356DC, #FF79DA);
-  background-clip: text;
-  -webkit-background-clip: text;
-  opacity: 0;
-  transition: all 200ms;
-  margin-right: -22px;
-}
-
-.heart:hover {
-  opacity: 1;
-  transform: scale(1.2);
-}
-
-.fa-regular.fa-heart:hover {
-  color: transparent;
-}
-
-.heart-size {
-  font-size: 22px;
-}
-
-.fcnt-marge {
-  margin-left: 102px;
-  font-weight: 700;
-  size: 24px;
-}
-
-.reser {
-  margin-left: 50px;
-}
-
 .card-color {
   width: 99%;
   height: 70%;
@@ -170,12 +209,6 @@ body {
   margin-top: 5px;
 }
 
-.fnct-color {
-  width: 100%;
-  height: 228px;
-  background-color: #F6F6F6;
-}
-
 .widhtsec1 {
   display: flex;
   justify-content: center;
@@ -192,35 +225,6 @@ body {
 
 .marginleftsec {
   margin-left: 50px;
-}
-
-.contact {
-  text-decoration: none;
-  color: #fff;
-  margin-bottom: -15px;
-}
-
-.bouton-color {
-  background-image: linear-gradient(#e98ef6, #9356DC);
-  width: 218px;
-  height: 50px;
-  border-radius: 25px;
-  display: flex;
-  justify-content: center;
-}
-
-.bouton-color button {
-  background-image: linear-gradient(#e98ef6, #9356DC);
-  border: none;
-}
-
-.bouton-color:hover {
-  opacity: 90%;
-  box-shadow: 0 0 8px #9356DC;
-}
-
-.colorboutons {
-  color: white;
 }
 
 .marge {
@@ -268,19 +272,6 @@ body {
   margin-bottom: 10px;
 }
 
-.white-color {
-  background-color: white;
-  width: 100%;
-  height: 228px;
-}
-
-.backfonction {
-  background-color: #f2f2f2;
-  width: 350px;
-  height: 72.38px;
-  border-radius: 20px;
-}
-
 .resto {
   margin-bottom: 25px;
 }
@@ -303,33 +294,6 @@ body {
   padding-left: 20px;
 }
 
-.number {
-  display: flex;
-  align-items: center;
-  position: absolute;
-  bottom: 0px;
-  left: -6px;
-  margin-left: -10px;
-  width: 20px;
-  height: 20px;
-  border-radius: 100%;
-  padding-left: 2px;
-  background-color: #9356DC;
-}
-
-.numéro1 {
-  color: white;
-  margin-left: 6px;
-}
-
-.colorV {
-  color: #9356DC;
-}
-
-.color1 {
-  color: #353535;
-}
-
 .restaurant {
   width: auto;
   background-color: #d43b3b;
@@ -350,6 +314,12 @@ body {
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 15px 15px 0px 0px;
+}
+
+.contact {
+  text-decoration: none;
+  color: #fff;
+  margin-bottom: -15px;
 }
 
 .displayfoot {
