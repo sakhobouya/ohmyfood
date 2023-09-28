@@ -106,11 +106,10 @@
         margin-top: 25px;
     }
 
-    .coeursolid{
-        margin-right: -10px;
+    .fa-heart {
+        font-size: 22px;
     }
     
-    .fa-heart{font-size: 22px;}
 
     .fas{
      font-size: 22px;
@@ -125,16 +124,12 @@
 
     .fas:hover{
      opacity: 1;
-     transform: scale(1.6);
+     transform: scale(1);
     }
 
-    .fa-regular.fa-heart:hover {
-     color: transparent;
-   }
+    
 
-    .fastaille{
-     font-size: 22px;
-    }
+    
 
     .card-marge {
         margin-top: -6px;
@@ -159,6 +154,14 @@
         
         
     }
+.displaycoeur {
+    display: flex;
+    justify-content: end;
+}
+
+
+
+
 
     .border{
         border-bottom: solid 2px #99E2D0;
@@ -419,7 +422,8 @@
         }
 
         .margecoeur{
-            margin-left: 20px;
+            margin-left: -35px 30px 50px 0px;
+            padding-bottom: 0px;
         }
 
         .backsection {
@@ -451,6 +455,10 @@
         
         
     
+    }
+    .displaycoeur {
+        justify-content: end;
+        display: flex;
     }
 
 
@@ -614,6 +622,7 @@
         
     }
     .backfooter2{
+        margin-top: -10px;
         background-color: #353535;
         width: 100%;
         height: 114px;

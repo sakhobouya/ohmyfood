@@ -85,10 +85,6 @@ body {
   margin-top: 25px;
 }
 
-.coeursolid {
-  margin-right: -10px;
-}
-
 .fa-heart {
   font-size: 22px;
 }
@@ -106,15 +102,7 @@ body {
 
 .fas:hover {
   opacity: 1;
-  transform: scale(1.6);
-}
-
-.fa-regular.fa-heart:hover {
-  color: transparent;
-}
-
-.fastaille {
-  font-size: 22px;
+  transform: scale(1);
 }
 
 .card-marge {
@@ -135,6 +123,11 @@ body {
   position: relative;
   margin-top: -60px;
   border-radius: 40px 40px 0px 0px;
+}
+
+.displaycoeur {
+  display: flex;
+  justify-content: end;
 }
 
 .border {
@@ -370,7 +363,8 @@ body {
     margin: 10px;
   }
   .margecoeur {
-    margin-left: 20px;
+    margin-left: -35px 30px 50px 0px;
+    padding-bottom: 0px;
   }
   .backsection {
     background-color: #f2f2f2;
@@ -394,6 +388,10 @@ body {
   .displayfoot {
     display: flex;
     flex-direction: row-reverse;
+  }
+  .displaycoeur {
+    justify-content: end;
+    display: flex;
   }
   .displayrow {
     display: flex;
@@ -512,6 +510,7 @@ body {
     margin-bottom: 55px;
   }
   .backfooter2 {
+    margin-top: -10px;
     background-color: #353535;
     width: 100%;
     height: 114px;
